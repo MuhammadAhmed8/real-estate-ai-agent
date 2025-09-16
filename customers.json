@@ -1,0 +1,19 @@
+{
+    "default": {
+        "property_type": "flat",
+        "locations": [
+            "gulshan iqbal"
+        ],
+        "budget": {
+            "min": 2.5,
+            "max": 2.5
+        },
+        "bedrooms": "3",
+        "bathrooms": null,
+        "must_have_features": [
+            "parking",
+            "balcony",
+            "garden"
+        ]
+    }
+}

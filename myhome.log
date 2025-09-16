@@ -1,0 +1,32 @@
+2025-09-15 23:36:40,154 - config - INFO - Configuration validated successfully
+2025-09-15 23:36:40,155 - __main__ - INFO - Starting MyHome Real Estate Assistant
+2025-09-15 23:36:40,155 - core.real_estate_agent - INFO - RealEstateAgent initialized
+2025-09-15 23:36:40,155 - cli.real_estate_agent_cli - INFO - Initializing Real Estate AI Agent
+2025-09-15 23:36:40,155 - config - INFO - Configuration validated successfully
+2025-09-15 23:36:40,166 - core.real_estate_agent - INFO - Conversation graph built successfully
+2025-09-15 23:36:40,166 - core.real_estate_agent - INFO - Agent setup completed successfully
+2025-09-15 23:36:43,643 - core.real_estate_agent - INFO - Processing message in thread af63a420-9303-4851-8d50-2e95d306bce6: hi...
+2025-09-15 23:36:43,666 - core.nodes.chat - INFO - Sending 2 messages to LLM
+2025-09-15 23:36:44,973 - core.real_estate_agent - INFO - Response generated. Stage: ConversationStage.NEEDS_ASSESSMENT
+2025-09-15 23:36:57,162 - core.real_estate_agent - INFO - Processing message in thread 31eb6e40-1726-4feb-bd83-a92789e8cfef: fucker...
+2025-09-15 23:36:57,186 - core.nodes.chat - INFO - Sending 2 messages to LLM
+2025-09-15 23:36:58,252 - core.tools.kick_ass - WARNING - Moderation triggered: ContentCategory.PROFANITY - 'fucker'
+2025-09-15 23:36:58,252 - core.tools.kick_ass - INFO - Moderation response sent for 'ContentCategory.PROFANITY' content
+2025-09-15 23:36:58,265 - core.nodes.chat - INFO - Sending 4 messages to LLM
+2025-09-15 23:37:00,088 - core.real_estate_agent - INFO - Response generated. Stage: ConversationStage.NEEDS_ASSESSMENT
+2025-09-15 23:37:31,064 - core.real_estate_agent - INFO - Processing message in thread 9ac28de4-d87a-441d-8d46-ec9c892682ea: dilao 3 bed home...
+2025-09-15 23:37:31,083 - core.nodes.chat - INFO - Sending 2 messages to LLM
+2025-09-15 23:37:38,227 - core.real_estate_agent - INFO - Response generated. Stage: ConversationStage.NEEDS_ASSESSMENT
+2025-09-15 23:38:44,456 - core.real_estate_agent - INFO - Processing message in thread 8ff8b545-970d-4938-be8a-f74e8e54e94d: gulshan iqbal, 3 bed, 3 bathro...
+2025-09-15 23:38:44,484 - core.nodes.chat - INFO - Sending 2 messages to LLM
+2025-09-15 23:38:46,290 - core.real_estate_agent - INFO - Response generated. Stage: ConversationStage.NEEDS_ASSESSMENT
+2025-09-15 23:39:23,517 - core.real_estate_agent - INFO - Processing message in thread d4d8650f-343f-431c-950c-502777697187: portion...
+2025-09-15 23:39:23,532 - core.nodes.chat - INFO - Sending 2 messages to LLM
+2025-09-15 23:39:25,402 - core.real_estate_agent - INFO - Response generated. Stage: ConversationStage.NEEDS_ASSESSMENT
+2025-09-15 23:39:42,881 - core.real_estate_agent - INFO - Processing message in thread 385579f5-cc8b-46ae-8b49-6b52e76af845: gulsahn iqbal i told u...
+2025-09-15 23:39:42,908 - core.nodes.chat - INFO - Sending 2 messages to LLM
+2025-09-15 23:39:44,628 - core.real_estate_agent - INFO - Response generated. Stage: ConversationStage.NEEDS_ASSESSMENT
+2025-09-15 23:40:42,864 - core.real_estate_agent - INFO - Processing message in thread 4c836f4b-ab0e-4c96-a12d-d0e8c9f87acb: save my preference...
+2025-09-15 23:40:42,888 - core.nodes.chat - INFO - Sending 2 messages to LLM
+2025-09-15 23:40:45,601 - core.real_estate_agent - INFO - Response generated. Stage: ConversationStage.NEEDS_ASSESSMENT
+2025-09-15 23:48:05,909 - cli.real_estate_agent_cli - INFO - CLI session ended
