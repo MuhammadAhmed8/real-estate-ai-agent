@@ -1,1 +1,6 @@
-
+typing-extensions
+pydantic
+langchain-core
+langgraph
+pymongo
+python-dotenv

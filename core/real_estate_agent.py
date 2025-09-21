@@ -1,7 +1,6 @@
 import uuid
 
-from langchain_core.messages import HumanMessage, ToolMessage
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_core.messages import HumanMessage
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.constants import START, END
 from langgraph.graph import StateGraph
@@ -9,10 +8,22 @@ from langgraph.prebuilt import ToolNode, tools_condition
 
 from config import Config
 from core.llm.llm_factory import LLMFactory
-from core.nodes.chat import chat_node, build_chatbot_node
+from core.nodes.chat import build_chatbot_node
 from core.state.conversation_stage import ConversationStage
 from core.state.state import State
-from core.tools import kick_ass_tool, save_customer_preferences_tool
+from core.tools import (
+    kick_ass_tool, 
+    save_customer_preferences_tool,
+    classify_user_intent,
+    search_properties,
+    present_properties,
+    save_to_favorites,
+    get_favorites,
+    remove_from_favorites,
+    get_favorites_summary,
+    refine_search_criteria
+)
+
 
 class RealEstateAgent:
     def __init__(self, llm=None):
@@ -30,7 +41,18 @@ class RealEstateAgent:
         if self.llm is None:
             self.llm = LLMFactory.create()
 
-        self.tools = [save_customer_preferences_tool, kick_ass_tool]
+        self.tools = [
+            save_customer_preferences_tool, 
+            kick_ass_tool,
+            classify_user_intent,
+            search_properties,
+            present_properties,
+            save_to_favorites,
+            get_favorites,
+            remove_from_favorites,
+            get_favorites_summary,
+            refine_search_criteria
+        ]
         self.llm_with_tools = self.llm.bind_tools(self.tools)
 
         await self.__build_graph()
